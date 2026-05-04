@@ -8,7 +8,7 @@ export default function HomePage() {
     <>
       {/* Hero */}
       <section className="hero">
-        <img src={homeview} alt="Krushnamayee Homestay" className="hero-bg" />
+        <img src={homeview} alt="Krushnamayee Homestay" className="hero-bg" fetchPriority="high" decoding="async" />
         <div className="hero-overlay" />
         <motion.div
           className="hero-content"
@@ -26,7 +26,7 @@ export default function HomePage() {
             className="hero-cta"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.97 }}
-            onClick={() => window.open("https://wa.me/919881156620", "_blank")}
+            onClick={() => window.open("https://wa.me/919422605509", "_blank")}
           >
             Book Your Stay
           </motion.button>
@@ -83,8 +83,8 @@ export default function HomePage() {
               viewport={{ once: true }}
             >
               <div className="highlight-icon">🏡</div>
-              <h3>Homely Comfort</h3>
-              <p>Clean rooms, peaceful garden, and home-cooked meals for a cozy stay.</p>
+              <h3>Homely Comfort*</h3>
+              <p>Clean rooms, peaceful garden, and home-cooked meals for a cozy stay. As per requirement or order.</p>
             </motion.div>
           </div>
           <div className="home-cta-row">

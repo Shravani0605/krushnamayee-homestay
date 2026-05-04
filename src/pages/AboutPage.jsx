@@ -17,7 +17,7 @@ export default function AboutPage() {
     <div className="page-wrapper">
       {/* Page Hero Banner */}
       <section className="page-hero">
-        <img src={garden} alt="About Krushnamayee Homestay" className="hero-bg" />
+        <img src={garden} alt="About Krushnamayee Homestay" className="hero-bg" fetchPriority="high" decoding="async" />
         <div className="hero-overlay" />
         <motion.div
           className="page-hero-content"
@@ -45,7 +45,7 @@ export default function AboutPage() {
               whileHover={{ scale: 1.02 }}
               transition={{ duration: 0.4 }}
             >
-              <img src={outspace} alt="Outdoor space at Krushnamayee Homestay" />
+              <img src={outspace} alt="Outdoor space at Krushnamayee Homestay" loading="lazy" decoding="async" />
             </motion.div>
             <div className="about-text">
               <div className="section-tag">Welcome</div>

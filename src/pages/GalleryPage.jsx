@@ -47,7 +47,7 @@ export default function GalleryPage() {
   return (
     <div className="page-wrapper">
       <section className="page-hero page-hero-short">
-        <img src={garden_overview} alt="Gallery" className="hero-bg" />
+        <img src={garden_overview} alt="Gallery" className="hero-bg" fetchPriority="high" decoding="async" />
         <div className="hero-overlay" />
         <motion.div
           className="page-hero-content"
@@ -71,7 +71,7 @@ export default function GalleryPage() {
           >
             {galleryImages.map((img, i) => (
               <motion.div key={i} className="gallery-item" variants={fadeInUp}>
-                <img src={img.src} alt={img.label} />
+                <img src={img.src} alt={img.label} loading="lazy" decoding="async" />
                 <div className="gallery-overlay">
                   <span className="gallery-label">{img.label}</span>
                 </div>
